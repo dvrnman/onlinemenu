@@ -9,10 +9,10 @@ class Setting
     public string $host;
     public string $dbName;
 
-    public function __construct($host,$dbName,$username,$password)
-    {
+    public function __construct($host, $dbName, $username, $password)
+    {  //baglantı cümlesi
         if (!isset($this->database))
-            self::$database = new PDO("mysql:host=$host;dbname=$dbName;charset=utf8",$username,$password);
+            self::$database = new PDO("mysql:host=$host;dbname=$dbName;charset=utf8", $username, $password);
     }
 
 
